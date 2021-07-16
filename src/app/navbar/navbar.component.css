@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-weight: 400;
+  list-style-type: none;
+  font-style: normal;
+}
+
+body {
+  background: linear-gradient(to right, #c04848, #480048);
+  height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav {
+  line-height: 1.4;
+  font-family: "Space Mono", monospace;
+  background-color: rgba(51, 51, 51, 0.555);
+  border: solid rgba(198, 225, 226, 0.246);
+  padding: 25px 35px;
+  width: 300px;
+  top: calc(50vh - 247px);
+  left: calc(10vw - 150px);
+  position: fixed;
+  border-radius: 16px;
+  box-shadow: 60px 40px 40px rgba(0, 0, 0, 0.4);
+  transform: scale(0) rotate(360deg);
+  transition: all 1.0s;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+nav.menu_active {
+  transform: scale(1) rotate(0deg);
+}
+
+nav > ol > li {
+  margin: 20px 0;
+  color: rgb(156, 214, 48);
+}
+
+nav > ol > li:first-of-type {
+  color: yellow;
+}
+
+.yellow {
+  color: yellow;
+}
+
+nav > ol > li > ol {
+  margin: 10px 0 0 20px;
+  border-left: 1px solid grey;
+  color: rgb(166, 93, 235);
+}
+
+nav > ol > li > ol > li {
+  margin: 7px 0;
+  padding-left: 20px;
+}
+
+nav a:hover {
+  color: #c04848;
+}
+
+h3 {
+  position: fixed;
+  font-family: "Roboto Mono", monospace;
+  font-size: 60px;
+  color: #feffff;
+  top: calc(10vh - 40px);
+  left: calc(10vw - 126px);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+h3:hover {
+  border-bottom: 6px dotted #dccfcf;
+  padding-bottom: 10px;
+  top: calc(10vh - 50px);
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  float: right;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ff0000;
+  transition: all 0.2s;
+}
+
+p:hover {
+  border-bottom: 2px dotted #cfd8dc;
+  padding-bottom: 5px;
+}

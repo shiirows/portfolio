@@ -1,0 +1,31 @@
+
+[
+{
+    "type": "",
+    "name": "Les projets",
+    "defaule": true
+},
+
+{
+    "type": "groupe",
+    "name": "Projet en groupe",
+    "default": false
+},
+{
+    "type": "perso",
+    "name": "projet personnel",
+    "default": false
+},
+
+{
+    "type": "hackathon",
+    "name": "Hackathon",
+    "default": false
+
+
+}
+
+
+
+]
+

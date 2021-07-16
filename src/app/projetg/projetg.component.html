@@ -1,0 +1,34 @@
+ 
+ <div id="select">
+        <select [(ngModel)]="currentType" id="selects">
+            <option id="opt" *ngFor="let cur of types" value={{cur.type}}>{{cur.name}}</option>
+        </select>
+    </div>
+ 
+ <div id="projet">
+
+  <div class="container">
+
+    <div *ngFor="let currentCard of list|cardtype:currentType"  [data]="currentCard" [zoom]="0.5" class="board" class="card">
+
+      <div class="card-header">
+        <img src={{currentCard.img}} alt={{currentCard.name}} height="150px" width="250px">
+      </div>
+
+      
+      <div class="card-body">
+        
+      <a  href="{{currentCard.lien}}"> <h4  >{{currentCard.name}} </h4></a>
+        <p>{{currentCard.desc}}</p>
+        
+      </div>
+
+  </div>
+
+  
+  </div>
+
+
+
+
+  </div>
