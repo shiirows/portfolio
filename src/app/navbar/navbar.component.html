@@ -1,42 +1,72 @@
-<h3 onclick="document.getElementsByTagName('nav')[0].className = 'menu menu_active'">&lt;Menu/&gt;</h3>
-<nav class="menu">
-   <p onclick="document.getElementsByTagName('nav')[0].className = 'menu'">&lt;Close/&gt;</p>
-   <ol>
+<h3 id="btn" onclick="document.getElementsByTagName('nav')[0].className = 'menu menu_active'">&lt;Menu/&gt;</h3>
 
- 
+<nav class="menu">
+
+      <p onclick="document.getElementsByTagName('nav')[0].className = 'menu'">&lt;Close/&gt;</p>
+      <ol>
+
       <li class="menu-item"><a [routerLink]="['/accueil']">Accueil </a></li>
       <li class="menu-item" ><a class="yellow" [routerLink]="['/quisuisje']">Qui suis-je ? </a></li>
-      <li class="menu-item">
-         <a >Formations</a>
-         <ol class="sub-menu">
-            <li class="menu-item"><a [routerLink]="['/formations']">Timeline</a></li>
-            <li class="menu-item"><a [routerLink]="['/wild']">Wildcodeschool</a></li>
-            <li class="menu-item"><a [routerLink]="['/bma']">BMA </a></li>
 
-         </ol>
+
+      <li class="menu-item">
+      <a >Formations</a>
+      <ol class="sub-menu">
+      <li class="menu-item"><a [routerLink]="['/formations']">Timeline</a></li>
+      <li class="menu-item"><a [routerLink]="['/wild']">Wildcodeschool</a></li>
+      <li class="menu-item"><a [routerLink]="['/bma']">BMA </a></li>
+      </ol>
       </li>
 
       <li class="menu-item">
-         <a >Competence</a>
-         <ol class="sub-menu">
-            
-            <li class="menu-item"><a [routerLink]="['/projetg']"  >Les Projets</a></li>
-           
-            
-         </ol>
+      <a >Competence</a>
+      <ol class="sub-menu">
+      <li class="menu-item"><a [routerLink]="['/projetg']"  >Les Projets</a></li>   
+      </ol>
       </li>
 
 
       <li class="menu-item">
-         <a >Loisir</a>
-         <ol class="sub-menu">
-            
-            <li class="menu-item"><a [routerLink]="['/construction']">Jeux vidéo </a></li>
-            <li class="menu-item"><a [routerLink]="['/construction']">Art création</a></li>
-         </ol>
+      <a >Loisir</a>
+      <ol class="sub-menu">  
+      <li class="menu-item"><a [routerLink]="['/construction']">Jeux vidéo </a></li>
+      <li class="menu-item"><a [routerLink]="['/construction']">Art création</a></li>
+      </ol>
       </li>
+
+
       <li class="menu-item"><a class="yellow" href="#">Contact</a></li>
+
       <li class="menu-item"><a class="yellow"   download="CV Alexandre" href="assets/CV.pdf">Curriculum vitae</a></li>
+
    </ol>
    
 </nav>
+
+<!--mobile first-->
+
+<div class="page">
+   
+   <div id="nav-container">
+     <div class="bg"></div>
+     <div class="button" tabindex="0">
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </div>
+     <div id="nav-content" tabindex="0">
+       <ul>
+         <li class="menu-item"><a [routerLink]="['/accueil']">Accueil </a></li>
+      <li class="menu-item" ><a  [routerLink]="['/quisuisje']">Qui suis-je ? </a></li>
+      <li class="menu-item"><a [routerLink]="['/formations']">Timeline</a></li>
+      <li class="menu-item"><a [routerLink]="['/wild']">Wildcodeschool</a></li>
+      <li class="menu-item"><a [routerLink]="['/bma']">BMA </a></li>
+      <li class="menu-item"><a [routerLink]="['/projetg']"  >Les Projets</a></li>  
+      <li class="menu-item"><a download="CV Alexandre" href="assets/CV.pdf">Curriculum vitae</a></li>
+         
+       </ul>
+     </div>
+   </div>
+ 
+   
+ </div>
