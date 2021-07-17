@@ -112,29 +112,30 @@ article blockquote p::after {
   article blockquote p::after {
     bottom: -56px;
   }
+  article {
+   
+    position: relative;
+    z-index: -1;
+  }
+
+  
 }
 
-@media screen and (max-width: 1440px){
- 
-  #cards{
-    z-index: -19;
-  }
- 
+@media screen and (max-width: 750px){
+
   #outil{
-    height:470px;
-     width:300px;
-     position: relative;
-     z-index: -1;
+    height:400px;
+    width:300px;
+    position: relative;
+    z-index: -1;
 
   }
-
-
 
 article {
   margin-top: 15px;
   max-width: 280px;
   position: relative;
-     z-index: -1;
+  z-index: -1;
 }
 article blockquote p::before{
   display: none;

@@ -112,5 +112,37 @@ article blockquote p::after {
   article blockquote p::after {
     bottom: -56px;
   }
+  article {
+   
+    position: relative;
+    z-index: -1;
+  }
+
+  
+}
+
+@media screen and (max-width: 750px){
+
+  #outil{
+    height:200px;
+    width:300px;
+    position: relative;
+    z-index: -1;
+
+  }
+
+article {
+  margin-top: 15px;
+  max-width: 280px;
+  position: relative;
+  z-index: -1;
+}
+article blockquote p::before{
+  display: none;
+}
+
+article blockquote p::after {
+  display: none;
+}
 }
 

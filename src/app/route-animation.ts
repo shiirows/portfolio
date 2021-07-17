@@ -11,7 +11,7 @@ export const fader = trigger('routeAnimations', [
     query(':enter, :leave', [
       style({
         
-        position: 'absolute',
+       // position: 'absolute',
         left: -3.5,
         width: '100%',
         opacity: 0,
