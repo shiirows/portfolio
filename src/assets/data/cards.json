@@ -1,8 +1,8 @@
 
 [
 {
-    "name":"of course",
-    "desc": "site de consultation voyage",
+    "name":"Of course",
+    "desc": "Site de consultation voyage",
     "img": "/assets/ofcours.png",
     "type": "groupe",
     "id": "1",
@@ -11,8 +11,8 @@
 },
 
 {
-    "name":"jeux de memory",
-    "desc": "jeux de mémoire ",
+    "name":"Jeux de memory",
+    "desc": "Jeux de mémoire ",
     "img": "/assets/memory.png",
     "type": "groupe",
     "id": "2",
@@ -22,7 +22,7 @@
 
 {
     "name":"Mars d'étres seul",
-    "desc": "site de rencontre pour robot",
+    "desc": "Site de rencontre pour robot.",
     "img": "/assets/rover.jpg",
     "type": "hackathon",
     "id": "3",
@@ -31,7 +31,7 @@
 },
 
 {
-    "name":"fiverr tchat meet",
+    "name":"Fiverr tchat meet",
     "desc": "Room tchat",
     "img": "/assets/fiverr.jpg",
     "type": "hackathon",

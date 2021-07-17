@@ -1,126 +1,116 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-/*Just the background stuff*/
-span.s1 {
-  position: absolute;
-  top: 0;
-  font-size: 15rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #3C4447;
-}
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
 
-span.s2 {
-  font-weight: 800;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 15rem;
-  text-transform: uppercase;
-  color: #3C4447;
-}
-
-
-
-/* The card */
-.card {
-  position: relative;
-  height: 450px;
-  width: 900px;
-  margin: 200px auto;
-  background-color: rgba(51, 51, 51, 0.623);
-  border: solid rgba(198, 225, 226, 0.698);
-  box-shadow: 60px 40px 40px rgba(0, 0, 0, 0.4);
-    opacity: 0.8;
-   font-family: Arial, Helvetica, sans-serif;
-   border-radius: 10px;
+@media screen and (min-width: 750px) {
   
-
 }
 
-/* Image on the left side */
-.thumbnail {
-  float: left;
-  position: relative;
-  left: 10px;
-  top: 10px;
-  height: 290px;
-  width: 520px;
-  overflow: hidden;
-  border-radius: 10px;
+#cards{
+  
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+  min-height: 100vh;
+  
 }
 
-/*object-fit: cover;*/
-/*object-position: center;*/
-img.left {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: auto;
+article {
+  
+  margin: auto;
+  background: rgba(51, 51, 51, 0.555);
+  max-width: 600px;
+  border-radius: 3px;
+  padding: 36px 50px;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  border: solid rgba(198, 225, 226, 0.335);
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#outil{
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  opacity: 0.8;
+  box-shadow: 0 4px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+article h1 {
+  margin-top: 0;
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: 700;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #c2c2c2;
+}
+article p {
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-bottom: 28px;
+}
+article blockquote {
   width: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-/* Right side of the card */
-.right {
-  margin-left: 590px;
-  margin-right: 20px;
-}
-
-h1 {
-  padding-top: 15px;
-  font-size: 1.3rem;
+  margin-left: -50px;
+  padding: 36px 50px;
+  position: relative;
  
-  color: rgba(255, 255, 255, 0.733);
+  margin-bottom: 28px;
 }
-
-.author {
-  background-color: #9ECAFF;
-  height: 30px;
-  width: 110px;
-  border-radius: 20px;
+article blockquote::before, article blockquote::after {
+  top: 0;
+  bottom: 0;
+  width: 25px;
+  content: "";
+  box-shadow: 0 2px rgba(0, 0, 0, 0.25);
 }
-
-.author > img {
-  padding-top: 5px;
-  margin-left: 10px;
-  float: left;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
+article blockquote::before {
+  right: 100%;
 }
-
-
-.separator {
-  margin-top: 10px;
-  border: 1px solid #C3C3C3;
+article blockquote::after {
+  left: 100%;
 }
-
-p {
-  text-align: justify;
-  padding-top: 10px;
-  font-size: 0.95rem;
-  line-height: 150%;
-  color: rgba(255, 255, 255, 0.733);
-font-size: 18px;
+article blockquote p {
+  margin: 0;
+  font-size: 1.5em;
 }
-
-
-
-h6 {
+article blockquote p::before {
+  top: 0;
+  left: 16px;
+  color: #fff;
+  content: "“";
+  font-size: 3em;
   position: absolute;
-  left: 30px;
-  bottom: -55px;
-  font-size: 2rem;
-  color: #C3C3C3;
+  text-shadow: -3px 0 #c2c2c2;
+}
+article blockquote p::after {
+  right: 16px;
+  color: #fff;
+  content: "”";
+  bottom: -32px;
+  font-size: 3em;
+  position: absolute;
+  text-shadow: 3px 0 #c2c2c2;
+}
+@media screen and (min-width: 750px) {
+  article h1 {
+    font-size: 3em;
+  }
+  article blockquote {
+    padding-right: 0;
+    width: calc(100% + 50px);
+  }
+  article blockquote::before {
+    display: none;
+  }
+  article blockquote::after {
+    width: 50px;
+    border-radius: 0 3px 3px 0;
+  }
+  article blockquote p {
+    font-size: 2.5em;
+  }
+  article blockquote p::after {
+    bottom: -56px;
+  }
 }
 
-
-
-#bottom{
-   position: absolute;
-   
-   left: 10px;
-   right: 10px;
-}
