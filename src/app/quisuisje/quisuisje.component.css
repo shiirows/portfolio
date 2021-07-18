@@ -1,9 +1,7 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
 
-@media screen and (min-width: 750px) {
-  
-}
+
 
 #cards{
   
@@ -128,6 +126,7 @@ article blockquote p::after {
     width:240px;
     position: relative;
     z-index: -1;
+    margin-left: 25px;
 
   }
 
