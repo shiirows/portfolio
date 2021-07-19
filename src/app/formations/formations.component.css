@@ -282,7 +282,7 @@
 
    .timeline .event:after {
     box-shadow: 0 0 0 4px #004ffc;
-    left: 157.85px;
+    left: 2px;
     background: #313534;
     border-radius: 50%;
     height: 11px;
@@ -294,7 +294,7 @@
 
   .timeline .event:before {
     top: -45px;
-    left: -17.5px;
+    left: 17.5px;
     color: rgb(255, 255, 255);
     content: attr(data-date);
     text-align: right;
