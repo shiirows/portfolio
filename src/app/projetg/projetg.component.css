@@ -106,11 +106,9 @@ img{
 
     #projet {
         
-        
-        
-        margin-left: 35px;
-        position: relative;
-        z-index: 1;
+      margin-left: 35px;
+      position: relative;
+      z-index: 1;
         
     }
 
@@ -119,7 +117,6 @@ img{
         z-index: 1;
         font-size: 19px;
     }
-
 
 }
 
@@ -140,6 +137,5 @@ img{
         z-index: 1;
         font-size: 19px;
     }
-
 
 }
