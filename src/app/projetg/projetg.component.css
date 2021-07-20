@@ -110,13 +110,13 @@ img{
         
         margin-left: 35px;
         position: relative;
-        z-index: -1;
+        z-index: 1;
         
     }
 
     #selects {
         position: relative;
-        z-index: -1;
+        z-index: 1;
         font-size: 19px;
     }
 
@@ -131,13 +131,13 @@ img{
         padding-left: 0;
         margin-left: 35px;
         position: relative;
-        z-index: -1;
+        z-index: 1;
         
     }
 
     #selects {
         position: relative;
-        z-index: -1;
+        z-index: 1;
         font-size: 19px;
     }
 
