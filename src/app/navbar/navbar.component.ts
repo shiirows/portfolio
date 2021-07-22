@@ -9,7 +9,15 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
+public link = document.getElementsByClassName('menu-item')
+
+public rangerNav: boolean = false
+public cacher(){
+this.rangerNav=!this.rangerNav
+}
+
   ngOnInit(): void {
+    
   }
 
 }

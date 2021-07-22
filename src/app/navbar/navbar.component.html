@@ -45,19 +45,19 @@
 
 <!--mobile first-->
 
-<div class="page">
+<div  class="page">
    
-   <div id="nav-container">
-     <div class="bg"></div>
+   <div  (click)="cacher()" id="nav-container">
+     <div  class="bg"></div>
      <div class="button" tabindex="0">
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
      </div>
-     <div id="nav-content" tabindex="0">
-       <ul>
-         <li class="menu-item"><a [routerLink]="['/accueil']">Accueil </a></li>
-      <li class="menu-item" ><a  [routerLink]="['/quisuisje']">Qui suis-je ? </a></li>
+     <div  *ngIf="!rangerNav" id="nav-content" tabindex="0">
+       <ul (click)="cacher()" >
+      <li class="menu-item"><a [routerLink]="['/accueil']" >Accueil </a></li>
+      <li class="menu-item"><a [routerLink]="['/quisuisje']">Qui suis-je ? </a></li>
       <li class="menu-item"><a [routerLink]="['/formations']">Timeline</a></li>
       <li class="menu-item"><a [routerLink]="['/wild']">Wildcodeschool</a></li>
       <li class="menu-item"><a [routerLink]="['/bma']">BMA </a></li>
